@@ -5,12 +5,16 @@
     Faça um script que peça um número inteiro e determine se ele é par ou ímpar.
     */
 
-    //ENTRADA
-
-    
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
+    const numero = Number(prompt(`Informe um número inteiro`));
+    const conta = numero % 2;
+    switch (conta) {
+        case 0:
+            alert(`Seu numero é par!`)
+            break;
+        
+        default:
+            alert(`Seu número é ímpar`)
+            break;
+    }
 
 </script>

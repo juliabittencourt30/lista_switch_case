@@ -12,12 +12,18 @@
     conforme o caso.
     */
 
-    //ENTRADA
-    
-    
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
+    const turno = prompt (`Informe em qual turno você estuda (M-matutino ou V-vespertino ou N-noturo):`).toUpperCase();
+    switch (turno) {
+        case "M":
+            alert(`Bom Dia!`);
+            break;
+        case "V":
+            alert(`Boa Tarde!`);
+        case "N":
+            alert(`Boa Noite!`);
+            break;
+        default:
+            alert(`Valor Inválido!`)
+            break;
+    }
 </script>
