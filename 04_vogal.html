@@ -5,12 +5,20 @@
     Construa um programa que leia um caractere e informe se este caractere é uma vogal.
     */
 
-    // ENTRADA
+    const caractere = prompt(`Informe um caractere:`).toUpperCase();
 
+    switch (caractere) {
+        case "A":
+        case "E":
+        case "I": 
+        case "O": 
+        case "U": 
+            alert(`Sua caractere é uma vogal`);
+            break;
     
-    // PROCESSAMENTO
-
-    
-    // SAÍDA
+        default:
+            alert(`Sua caractere não é uma vogal`);
+            break;
+    }
 
 </script>

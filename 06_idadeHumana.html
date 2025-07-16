@@ -8,13 +8,26 @@
     - cães de porte médio: fator 6
     - cães grandes: fator 7.
     */
+      const idadecao = Number(prompt("Qual a idade do seu cão?"));
+      const portec = prompt("Qual o porte do seu cão?(P-pequeno,M-médio,G-grande.)").toUpperCase();
+      let idadeH1 = idadecao * 5;
+      let idadeH2 = idadecao * 6;
+      let idadeH3 = idadecao * 7;
 
-    // ENTRADA
-
-    
-    // PROCESSAMENTO
-
-    
-    // SAÍDA
+      switch (portec) {
+        case "P":
+            alert(`A idade do seu cão é ${idadeH1}.`);
+            break;
+        case "M":
+            alert(`A idade do seu cão é ${idadeH2}.`);
+            break;
+        case "G":
+            alert(`A idade do seu cão é ${idadeH3}.`);
+            break;
+      
+        default:
+            alert(`valor inesperado.`)
+            break;
+      }
 
 </script>
